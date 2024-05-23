@@ -1,0 +1,40 @@
+.list__ordered {
+    list-style-type: upper-roman;
+}
+
+.course {
+    color: teal;
+    font-size: 20px;
+    list-style-type: upper-roman;
+}
+
+.course-item::marker{
+    color: brown;
+    font-weight: 700;
+} 
+
+.course-item>ol {
+    color: yellow;
+}
+.course-item>ol>li>ul{
+ color: blue;
+ /* 1 variant */
+ list-style-image: url(../image/icon_check.png);
+
+}
+
+.course-item:nth-child(3) ol{
+ list-style-image: url(../image/pensil.png);
+
+}
+.course-item:nth-child(2) ol{
+    list-style-type: none;
+} 
+.course-item:nth-child(2) ol>li::before{
+    /* content: url(../image/pensil.png); */
+    content: '\263A';
+    color:red;
+   
+   }
+
+
